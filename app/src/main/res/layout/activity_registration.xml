@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:ems="20"
+        android:gravity="center"
+        android:text="Please, enter your details for registration!"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/Register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="109dp"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="175dp"
+        android:hint="Enter your email id"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/Register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="241dp"
+        android:ems="10"
+        android:hint="Enter Passsword"
+        android:inputType="textPassword" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/register_checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show password"
+        android:layout_below="@+id/Register_password"/>
+
+
+    <Button
+        android:id="@+id/button_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="146dp"
+        android:onClick="signUp"
+        android:text="Register" />
+
+    <View
+        android:layout_width="158dp"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="110dp"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_toLeftOf="@+id/textView"
+        android:background="@color/colorAccent" />
+
+    <View
+        android:layout_width="158dp"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="110dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text="OR"
+        android:textSize="20dp" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/register_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+</RelativeLayout>
